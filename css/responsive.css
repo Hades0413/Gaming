@@ -1,0 +1,316 @@
+
+ @media (min-width: 576px) {
+
+  .contenedor {
+    max-width: 540px;
+    width: 100%;
+    margin-inline: auto;
+  }
+
+  .h1 { --fs-2: 7rem; }
+
+  .header-actions { gap: 40px; }
+
+  .cart-btn {
+    display: block;
+    position: relative;
+    color: var(--white);
+    font-size: 20px;
+  }
+
+  .cart-badge {
+    position: absolute;
+    top: -6px;
+    right: -10px;
+    background-color: var(--marigold);
+    color: var(--eerie-black-1);
+    font-size: var(--fs-11);
+    border-radius: 20px;
+    padding: 3px 5px;
+    line-height: 1;
+    font-weight: var(--fw-800);
+  }
+
+  .search-contenedor :is(.search-field, .search-submit) { font-size: var(--fs-3); }
+
+  .brand-item { min-width: calc(33.33% - 13.33px); }
+
+  .juego-lanzado .scrollbar-item { min-width: 50%; }
+
+  .blog-lista {
+    grid-template-columns: 75%;
+    justify-content: center;
+  }
+
+  .footer-top .contenedor { grid-template-columns: 1fr 1fr; }
+
+  .footer-brand,
+  .footer-wrapper { grid-column: 1 / 3; }
+
+}
+
+
+
+@media (min-width: 768px) {
+
+  .contenedor { max-width: 720px; }
+
+  .scrollbar-item { min-width: calc(50% - 15px); }
+
+  .hero-texto {
+    max-width: 60ch;
+    margin-inline: auto;
+  }
+
+  .brand-item { min-width: calc(25% - 15px); }
+
+  .banner-partida-live .play-btn { font-size: 120px; }
+
+  .jugador-partida-live::after { font-size: 30rem; }
+
+  .blog-lista { grid-template-columns: 1fr 1fr; }
+
+  .boletin :is(.input-wrapper, .boletin-btn) { margin: 0; }
+
+  .boletin .input-wrapper {
+    max-width: unset;
+    width: 100%;
+  }
+
+  .boletin .h2 { --fs-4: 2.6rem; }
+
+  .boletin-form {
+    display: flex;
+    gap: 10px;
+    max-width: 500px;
+    width: 100%;
+    margin-inline: auto;
+  }
+
+  .footer-brand,
+  .footer-wrapper { grid-column: auto; }
+
+  .footer-bottom-img { display: block; }
+
+  .footer-bottom { text-align: left; }
+
+  .footer-bottom .contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .volver-arriba-btn {
+    bottom: 50px;
+    right: 45px;
+  }
+
+}
+
+
+
+@media (min-width: 992px) {
+
+  .contenedor { max-width: 960px; }
+
+  :is(.header, .hero, .partida-live) .contenedor { max-width: unset; }
+
+  .scrollbar-item { min-width: calc(33.33% - 20px); }
+
+  .header-top {
+    display: block;
+    background-image: url("../img/header-top-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding-block: 20px;
+  }
+
+  .header-top .contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .texto-tiempo {
+    color: var(--quick-silver);
+    font-size: var(--fs-10);
+    font-weight: var(--fw-600);
+  }
+
+  .texto-tiempo .span {
+    display: inline-block;
+    color: var(--xiketic);
+    font-size: 1.8rem;
+    font-weight: var(--fw-700);
+    padding: 10px 20px;
+    margin-inline: 5px;
+  }
+
+  .header :is(.social-wrapper, .social-list) {
+    display: flex;
+    align-items: center;
+  }
+
+  .header .social-wrapper { gap: 15px; }
+
+  .header .social-list { gap: 10px; }
+
+  .social-titulo {
+    color: var(--white);
+    font-family: var(--ff-oxanium);
+    font-size: var(--fs-8);
+    font-weight: var(--fw-700);
+  }
+
+  .header .social-link {
+    background-color: var(--jet);
+    color: var(--marigold);
+    font-size: var(--fs-9);
+    padding: 8px 10px;
+  }
+
+  .header-bottom { outline: 1px solid hsla(0, 0%, 0%, 0.2); }
+
+  .header-bottom::before {
+    display: block;
+    top: 0;
+    left: -15px;
+    right: auto;
+    width: 170px;
+    --skewX: 16deg;
+  }
+
+  .nav-toggle-btn { display: none; }
+
+  .navbar,
+  .navbar.active {
+    all: unset;
+    margin-inline: auto 15px;
+  }
+
+  .navbar-list { display: flex; }
+
+  .navbar-item:not(:last-child) { border-block-end: none; }
+
+  .navbar-link {
+    color: var(--white);
+    font-family: var(--ff-oxanium);
+    font-size: var(--fs-11);
+    text-transform: uppercase;
+    font-weight: var(--fw-700);
+    padding: 10px 20px;
+  }
+
+  .navbar-link::before {
+    display: block;
+    opacity: 0;
+    transition: var(--transition);
+  }
+
+  .navbar-link:is(:hover, :focus) {
+    background-color: transparent;
+    color: var(--xiketic);
+  }
+
+  .navbar-link:is(:hover, :focus)::before { opacity: 1; }
+
+
+  .hero { text-align: left; }
+
+  .hero-banner { display: block; }
+
+  .hero .contenedor {
+    display: grid;
+    grid-template-columns: 1fr 0.9fr;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .btn { margin-inline: 0; }
+
+  .brand-item { min-width: calc(20% - 16px); }
+
+  .ultimo-juego .has-scrollbar { padding-block-end: 0; }
+
+  .banner-partida-live {
+    max-width: 700px;
+    margin-inline: auto;
+  }
+
+  .jugador-partida-live {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+  }
+
+  .detalle-partida-live { margin-block: 0; }
+
+  .juego-lanzado .scrollbar-item { min-width: 33.33%; }
+
+
+  .blog-lista {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+  .boletin-form { max-width: 650px; }
+  
+  .footer .contenedor {
+    grid-template-columns: 1fr 0.7fr 0.7fr;
+    column-gap: 80px;
+  }
+
+}
+
+
+
+@media (min-width: 1200px) {
+
+
+  .contenedor,
+  :is(.header, .hero, .partida-live) .contenedor { max-width: 1230px; }
+
+  .h1 { --fs-2: 7.5rem; }
+
+  .scrollbar-item { min-width: calc(25% - 22.5px); }
+
+  .header-bottom::before { width: 270px; }
+
+  .navbar-link {
+    font-size: var(--fs-9);
+    padding-inline: 25px;
+  }
+
+  .hero .contenedor { grid-template-columns: 1fr 1fr; }
+
+  .brand-item { min-width: calc(16.66% - 16.66px); }
+
+  .section-wrapper::before { height: 72%; }
+
+  .banner-partida-live { max-width: max-content; }
+
+  .jugador-partida-live::after { font-size: 35rem; }
+
+  .juego-lanzado .has-scrollbar { padding-block-end: 0; }
+
+  .juego-lanzado .scrollbar-item { min-width: 25%; }
+
+  .shop .has-scrollbar { padding-block-end: 15px; }
+
+  .boletin-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 70px;
+  }
+
+  .boletin .h2 { margin-block-end: 0; }
+
+  .boletin-form { margin-inline: 0; }
+
+  .footer .contenedor { grid-template-columns: 1fr 0.7fr 0.7fr 1fr; }
+
+}
